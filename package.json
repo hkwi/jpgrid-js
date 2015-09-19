@@ -1,0 +1,17 @@
+{
+	"name":"jpgrid",
+	"version":"0.1",
+	"description":"Japanese geographical statistics mesh code",
+	"bugs": {
+		"url":"https://github.com/hkwi/jpgrid-js/issues"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Hiroaki KAWAI",
+		"email": "hiroaki.kawai@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hkwi/jpgrid-js.git"
+	}
+}
