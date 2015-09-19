@@ -1,6 +1,7 @@
 {
 	"name":"jpgrid",
 	"version":"0.1",
+	"main":"index.js",
 	"description":"Japanese geographical statistics mesh code",
 	"bugs": {
 		"url":"https://github.com/hkwi/jpgrid-js/issues"
