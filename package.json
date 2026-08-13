@@ -1,8 +1,15 @@
 {
 	"name":"jpgrid",
 	"version":"0.0.1",
+	"description":"Japanese geographical statistics mesh code encoder & decoder",
 	"main":"index.js",
-	"description":"Japanese geographical statistics mesh code",
+	"exports":"./index.js",
+	"files":["index.js","README.md","LICENSE"],
+	"keywords":["gis","geospatial","japan","mesh","jismesh","geocoding"],
+	"engines":{"node":">=18"},
+	"scripts":{
+		"test":"node --test"
+	},
 	"bugs": {
 		"url":"https://github.com/hkwi/jpgrid-js/issues"
 	},

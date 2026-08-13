@@ -5,7 +5,7 @@
 	if (typeof module !== "undefined" && module.exports) {
 		module.exports = myModule;
 	} else {
-		root.myModule = myModule;
+		root.jpgrid = myModule;
 	}
 	function _encode(lat, lon, base1) {
 		if(base1 === undefined){
@@ -100,7 +100,7 @@
 				base1>>=1;
 			} else {
 				for(var i=8; i<gridcode.length; i++) {
-					v = parseInt(gridcode.substring(i,i+1))-1;
+					let v = parseInt(gridcode.substring(i,i+1))-1;
 					lat = (lat<<1) + Math.floor(v/2);
 					lon = (lon<<1) + (v%2);
 					base1<<=1
@@ -130,7 +130,12 @@
 	};
 	myModule.jpgrid_bbox = function(geocode) {
 		var d = _decode(geocode);
-		return {"west": d[0]/(d[2]*1.5), "south":d[1]/d[2]+100.0, "north":(d[0]+1)/(d[2]*1.5), "east":(d[1]+1)/d[2]+100.0};
+		return {
+			"west": d[1]/d[2]+100.0,
+			"south": d[0]/(d[2]*1.5),
+			"north": (d[0]+1)/(d[2]*1.5),
+			"east": (d[1]+1)/d[2]+100.0
+		};
 	};
 })(this);
 // jpgrid_encodeHalf(34.709061, 135.206833) == "523501562"
