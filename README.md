@@ -143,6 +143,7 @@ The 2nd mesh is divided into 8×8 parts for the 2nd mesh code, and the 3rd mesh 
 
 - [jismeshcode (Rust)](https://docs.rs/jismeshcode/latest/jismeshcode/) — JIS X 0410 implementation with coordinate conversion, mesh levels, divided meshes, integrated meshes, bounds, and neighbors.
 - [jismesh (Python)](https://pypi.org/project/jismesh/) — Python implementation and utilities for converting coordinates and mesh codes.
+- [python-geohash (Python)](https://github.com/hkwi/python-geohash) — the repository includes [`jpgrid.py`](https://github.com/hkwi/python-geohash/blob/master/jpgrid.py) and [`jpiarea.py`](https://github.com/hkwi/python-geohash/blob/master/jpiarea.py) for Japanese grid-square calculations in addition to geohash functions.
 - [jpmesh (R)](https://cran.r-project.org/package=jpmesh) — R utilities for Japanese mesh-code data and geometry.
 
 For example, the coordinate `35.681236, 139.767125` is in the 3rd mesh `53394611`. This value is also used in the `jismeshcode` documentation as a Tokyo-area mesh-code example. Mesh-code results can differ when coordinates are supplied in the old Tokyo datum rather than the world datum, so the coordinate reference system should be recorded with test data.
