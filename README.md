@@ -20,6 +20,15 @@ Implements the mesh code system defined by [JIS C 6304](http://www.jisc.go.jp/ap
 npm install jpgrid
 ```
 
+TypeScript users receive the bundled declarations automatically:
+
+```ts
+import { jpgrid_encode, jpgrid_bbox } from 'jpgrid';
+
+const code: string = jpgrid_encode(35.681236, 139.767125);
+const box = jpgrid_bbox(code);
+```
+
 ## Usage
 
 ### Encode
