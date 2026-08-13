@@ -1,18 +1,38 @@
 {
-	"name":"jpgrid",
-	"version":"0.0.1",
-	"description":"Japanese geographical statistics mesh code encoder & decoder",
-	"main":"index.js",
-	"types":"index.d.ts",
-	"exports":{".":{"types":"./index.d.ts","require":"./index.js","default":"./index.js"}},
-	"files":["index.js","index.d.ts","README.md","LICENSE"],
-	"keywords":["gis","geospatial","japan","mesh","jismesh","geocoding"],
-	"engines":{"node":">=18"},
-	"scripts":{
-		"test":"node --test"
+	"name": "jpgrid",
+	"version": "0.0.2",
+	"description": "Japanese geographical statistics mesh code encoder & decoder",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"require": "./index.js",
+			"default": "./index.js"
+		}
+	},
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"README.md",
+		"LICENSE"
+	],
+	"keywords": [
+		"gis",
+		"geospatial",
+		"japan",
+		"mesh",
+		"jismesh",
+		"geocoding"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"test": "node --test"
 	},
 	"bugs": {
-		"url":"https://github.com/hkwi/jpgrid-js/issues"
+		"url": "https://github.com/hkwi/jpgrid-js/issues"
 	},
 	"license": "MIT",
 	"author": {
