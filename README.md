@@ -5,7 +5,7 @@
 
 **Japanese Statistical Mesh Code (統計メッシュコード) encoder & decoder.**
 
-Implements the mesh code system defined by [JIS C 6304](http://www.jisc.go.jp/app/JPS/JSPS02.html?id=1954) / [JIS X 0410](http://www.jisc.go.jp/app/JPS/JSPS02.html?id=2879) used in Japan for statistical data geocoding.
+Implements the mesh code system defined by [JIS X 0410 (formerly JIS C 6304)](https://webdesk.jsa.or.jp/books/W11M0270/) used in Japan for statistical data geocoding.
 
 ## Features
 
@@ -134,7 +134,7 @@ The 2nd mesh is divided into 8×8 parts for the 2nd mesh code, and the 3rd mesh 
 
 ### Specifications and public guidance
 
-- [JIS X 0410 地域メッシュコード](https://kikakurui.com/x0/X0410-2002-01.html) — code structure, base mesh, divided meshes, and integrated meshes. This is a publicly viewable reproduction of the JIS text; consult the official JIS publication when a formally authoritative copy is required.
+- [JSA Webdesk: JIS規格詳細検索](https://webdesk.jsa.or.jp/books/W11M0270/) — the official Japan Standards Association catalogue. Search for `JIS X 0410` to find the current official standard and its publication information. The standard itself may require purchase or access through JSA services.
 - [環境省 生物多様性センター: 基準地域メッシュ](https://www.biodic.go.jp/kiso/col_mesh.html) — overview of the standard mesh system and the sizes of the 1st, 2nd, and 3rd meshes.
 - [総務省統計局: 市区町村別メッシュ・コード一覧](https://www.stat.go.jp/data/mesh/m_itiran.htm) — official mesh-code datasets published by municipality.
 - [国土地理院: 数値地図250mメッシュのファイル仕様](https://www.gsi.go.jp/geoinfo/dmap/dem250m-filespec.html) — examples of mesh-code use in national geospatial data formats.
@@ -143,6 +143,7 @@ The 2nd mesh is divided into 8×8 parts for the 2nd mesh code, and the 3rd mesh 
 
 - [jismeshcode (Rust)](https://docs.rs/jismeshcode/latest/jismeshcode/) — JIS X 0410 implementation with coordinate conversion, mesh levels, divided meshes, integrated meshes, bounds, and neighbors.
 - [jismesh (Python)](https://pypi.org/project/jismesh/) — Python implementation and utilities for converting coordinates and mesh codes.
+- [python-geohash (Python)](https://github.com/hkwi/python-geohash) — the repository includes [`jpgrid.py`](https://github.com/hkwi/python-geohash/blob/master/jpgrid.py) and [`jpiarea.py`](https://github.com/hkwi/python-geohash/blob/master/jpiarea.py) for Japanese grid-square calculations in addition to geohash functions.
 - [jpmesh (R)](https://cran.r-project.org/package=jpmesh) — R utilities for Japanese mesh-code data and geometry.
 
 For example, the coordinate `35.681236, 139.767125` is in the 3rd mesh `53394611`. This value is also used in the `jismeshcode` documentation as a Tokyo-area mesh-code example. Mesh-code results can differ when coordinates are supplied in the old Tokyo datum rather than the world datum, so the coordinate reference system should be recorded with test data.
